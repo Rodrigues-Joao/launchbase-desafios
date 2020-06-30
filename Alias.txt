@@ -8,3 +8,4 @@ git config --global alias.co commit
 
 git config --global alias.lg "log --all --graph --decorate --oneline --abbrev-commit"
 
+git config --global alias.push "push origin master"
