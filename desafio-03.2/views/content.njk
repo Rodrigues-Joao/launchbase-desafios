@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+{% block styles %}
+<link rel="stylesheet" href="/index.css">
+<title>Conteúdos de - {{ about.title }}</title>
+{% endblock %}
+    {% block content %}
+    <div class="section">
+        <section class="grid">
+            {% for card in cards%}
+            <div class="curso-card" id="{{card.title}}">
+                <div class="img-card">
+                    <img src="{{card.img_url}}" alt="Imagem de {{card.title}}">
+                </div>
+                <div class="content-card">
+                    <p>{{card.duration}}</p>
+                    <p class="car_price">{{card.price}}</p>
+                </div>
+            </div>
+            {%endfor%}
+          
+        </section>
+    </div>
+    <div class="modal_overlay">
+        <div class="modal">
+            <div>
+                <a class="fullscreen-modal">
+                    <i class="material-icons">fullscreen</i>
+                </a>
+                <a class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
+            <iframe frameborder="0" src=""></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    {% endblock %}
