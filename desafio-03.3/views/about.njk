@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+{% block styles %}
+<title>Sobre - {{ about.title }}</title>
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="/sobre.css">
+{% endblock %}
+    {% block content %}
+    <div class="about-content">
+    <div id="imgPerfil">
+        <img src="{{about.photo_url}}" alt="Logo {{about.title}}">
+        <h1>{{about.title}}</h1>
+        <h2>{{about.description}}</h2>
+    </div>
+    <div id="list">
+        <h3>Principais tecnologias: </h3>
+        <ul>
+            {% for technology in about.main_technologies %}
+            <li>{{technology.name}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="links">
+        {% for link in about.links %}
+        <a target="_blank" href="{{link.url}}">{{link.name}}</a>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}
