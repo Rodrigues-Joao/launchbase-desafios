@@ -6,8 +6,12 @@
     gap: 20px;
 }
 
-#revenue {
+.more-acessed-cards {
     margin-top: 50px;
+}
+
+.revenue-card {
+    cursor: pointer;
 }
 
 .img-card img {

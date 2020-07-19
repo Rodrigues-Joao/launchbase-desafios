@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/header-footer.css">
-    <link rel="stylesheet" href="styles/sobre.css">
+{% extends "layout.njk" %} 
+{% block head %}
+    <link rel="stylesheet" href="/sobre.css">
     <title>Sobre</title>
 </head>
-
-<body>
-    <div class="content">
-        <header>
-            <img src="assets/logo.png" alt="Logo" onclick="return_index()">
-            <div>
-                <a href="sobre.html">Sobre</a>
-                <a href="receitas.html">Receitas</a>
-            </div>
-        </header>
+{% endblock%}
+{% block content %}
         <section class="history">
 
             <div class="initial-title">
@@ -49,10 +36,4 @@
             </div>
     </div>
     </section>
-    <div class="footer">
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-    </div>
-    <script src="scripts/script.js"></script>
-</body>
-
-</html>
+    {% endblock %}

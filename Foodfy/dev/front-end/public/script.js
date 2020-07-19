@@ -26,5 +26,5 @@ document.querySelector('.close-modal').addEventListener('click', () => {
 
 
 function return_index() {
-    window.location.href = 'index.html'
+    window.location.href = '/'
 }
