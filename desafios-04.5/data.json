@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "created_at": 1604536576110,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/62751332?s=460&u=352feb8de95f939931f708ba67f0c9f8c24d759c&v=4",
+      "name": "joao victor rodrigurd",
+      "birth": 500601600000,
+      "schooling": "EMC",
+      "classes": "EAD",
+      "services": "matematica, quimica, fisica"
+    }
+  ]
+}
